@@ -6,6 +6,12 @@
 
 declare(strict_types=1);
 
+/**
+ * 工厂方法模式
+ *
+ * 优点：当需要增加新的产品时，只需要增加新的工厂类即可，不需要改动原来的代码（符合开闭原则）
+ */
+
 interface Logger
 {
     public function log(string $message);
