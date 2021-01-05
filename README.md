@@ -12,14 +12,15 @@
 
 ### 分类 
 
-生成对象：单例
+生成对象：单例，简单工厂，工厂方法，抽象工厂
 
 ### 代码实现
 
 1. [继承与组合](./组合与继承/README.md)
 2. [单例模式](./单例模式/index1.php)
 3. [简单工厂模式](./简单工厂模式/README.md)
-4. [工厂方法模式 - Factory Method](./简单工厂模式/README.md)
+4. [工厂方法模式 - Factory Method](./工厂方法模式/index1.php)
+5. [抽象工厂模式 - Abstract Factory](./抽象工厂模式/index1.php)
 
 
 
