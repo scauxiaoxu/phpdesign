@@ -45,6 +45,9 @@ class FileLogger implements Logger
 
 /**
  * Interface LoggerFactory
+ * 这里也可以定义abstract
+ *
+ * 定义工厂接口 让子类实现具体创建类的过程。当需要增加创建类的时候，只需要增加工厂子类就可以了
  */
 interface LoggerFactory
 {
