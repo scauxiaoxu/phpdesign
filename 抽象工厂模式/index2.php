@@ -36,6 +36,13 @@ Class CommonFactory implements WriterFactory
         return $obj;
     }
 
+    /**
+     * 这里如果不使用switch case的话可以靠谱使用反射来生成类
+     *
+     * // 利用反射实例化类
+     * $class = new ReflectionClass($className);
+     * $article = $class->newInstance();
+     */
     public function createJsonWriter(): JsonWriter
     {
         switch ($this->product) {
