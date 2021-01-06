@@ -6,6 +6,11 @@
 
 declare(strict_types=1);
 
+/**
+ * 工厂方法每个工厂只生产单一产品。当需要生产的产品很多的时候，就需要每个产品对应一个生产工厂
+ *
+ * 抽象工厂方法就是为了解决上诉问题而产生的
+ */
 
 interface CsvWriter
 {
@@ -62,14 +67,16 @@ class WinJsonWriter implements JsonWriter
 //------------------------------------------------
 
 /**
- * 这里将不同对象的创建抽象成不同的方法
+ * 这里将不同对象的创建抽象成不同的方法 按产品划分多个产品
  * Interface WriterFactory
  */
 interface WriterFactory
 {
-    public function createCsvWriter(): CsvWriter;
+    // 这里如果新增一个产品的话 要修改全部的工厂类
 
-    public function createJsonWriter(): JsonWriter;
+    public function createCsvWriter():CsvWriter;
+
+    public function createJsonWriter():JsonWriter;
 }
 
 
