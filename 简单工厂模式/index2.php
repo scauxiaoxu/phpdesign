@@ -1,12 +1,4 @@
 <?php
-/**
- *
- * Date: 2021/1/4
- * Time: 15:57
- *
- * File: index2.php
- * PROJECT_NAME: phpdesign
- */
 
 declare(strict_types=1);
 

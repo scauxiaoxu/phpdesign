@@ -1,11 +1,9 @@
 <?php
+
 /**
+ * 当项目里需要重复new一个类的时候可以考虑工厂方法
  *
- * Date: 2021/1/4
- * Time: 15:52
- *
- * File: index1.php
- * PROJECT_NAME: phpdesign
+ * 使用工厂类统一生成对象
  */
 
 declare(strict_types=1);
