@@ -58,6 +58,16 @@ class Singleton
     {
     }
 
+
+    /**
+     * 防止通过反序列化生成类实例
+     *
+     * $obj1 = Singleton::getInstance();
+     * $obj2= unserialize(serialize($obj1));
+     */
+    private function __wakeup()
+    {
+    }
 }
 
 try {

@@ -12,7 +12,7 @@
 
 ### 分类 
 
-生成对象：单例，简单工厂，工厂方法，抽象工厂
+生成对象：单例，简单工厂，工厂方法，抽象工厂，创造者模式，原型模式
 
 ### 代码实现
 
@@ -23,7 +23,8 @@
 5. [抽象工厂模式 - Abstract Factory](./抽象工厂模式/index1.php)
 
 
-
+### 参考
+- https://github.com/domnikl/DesignPatternsPHP
 
 ### License
 [MIT](https://github.com/scauxiaoxu/phpdesign/blob/main/LICENSE)
