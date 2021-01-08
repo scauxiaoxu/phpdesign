@@ -22,6 +22,7 @@
 4. [工厂方法模式 - Factory Method](./工厂方法模式/index1.php)
 5. [抽象工厂模式 - Abstract Factory](./抽象工厂模式/index1.php)
 6. [建造者模式 - Builder](./建造者模式/index1.php)
+7. [原型模式 - Prototype](./原型模式/index1.php)
 
 
 ### 参考
