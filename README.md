@@ -25,6 +25,9 @@
 5. [抽象工厂模式 - Abstract Factory](./抽象工厂模式/index1.php)
 6. [建造者模式 - Builder](./建造者模式/index1.php)
 7. [原型模式 - Prototype](./原型模式/index1.php)
+8. [适配器模式 - Adapter](./适配器模式/index1.php)
+9. [桥接模式 - Bridge](./桥接模式/index1.php)
+
 
 
 ### 参考
