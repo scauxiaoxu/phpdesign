@@ -3,6 +3,8 @@
 /**
  * 组合模式
  *
+ * 保证各个节点不断延伸同时递归在可控的范围内 结构清晰
+ *
  * @link https://juejin.cn/post/6844903967407734792
  */
 
@@ -33,11 +35,12 @@ class RoleManger extends Role
     public function Remove(Role $role)
     {
         $position = 0;
+
         foreach ($this->userRoleList as $n) {
-            ++$position;
             if ($n == $role) {
                 array_splice($this->userRoleList, ($position), 1);
             }
+            ++$position;
         }
     }
 
@@ -78,7 +81,7 @@ $root->SendMessage();
 
 echo "----------------------------------" . PHP_EOL;
 
-// 社交版块
+// 社交版块 root2的组合可以不断向下延伸 通过组合模式实现 结构清晰
 $root2    = new RoleManger('root-社交');
 $managerA = new RoleManger('论坛用户');
 $managerA->add(new Team('北京论坛用户'));
@@ -93,6 +96,10 @@ $root2->add($managerA);
 $root2->add($managerB);
 $root2->SendMessage();
 
+echo "----------------------------------" . PHP_EOL;
+
+$root2->Remove($managerB);
+$root2->SendMessage();
 
 
 
