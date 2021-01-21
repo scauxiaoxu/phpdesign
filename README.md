@@ -14,7 +14,7 @@
 
 >生成对象：单例，简单工厂，工厂方法，抽象工厂，建造者模式，原型模式
 
->结构型模式：适配器,桥接,组合,装饰(装饰者 装饰器)
+>结构型模式：适配器,桥接,组合,装饰(装饰者 装饰器),门面(外观)
 
 ### 代码实现
 
@@ -29,11 +29,13 @@
 9. [桥接模式 - Bridge](./桥接模式/index1.php)
 10. [组合模式 - Composite](./组合模式/index1.php)
 11. [装饰器模式 - Decorator](./装饰器/index1.php)
+12. [门面模式 - Facade](./门面模式/index1.php)
 
 
 
 ### 参考
 - https://github.com/domnikl/DesignPatternsPHP
+- https://github.com/baijunyao/design-patterns
 
 ### License
 [MIT](https://github.com/scauxiaoxu/phpdesign/blob/main/LICENSE)
