@@ -10,10 +10,15 @@
 abstract class PersonBuilder
 {
     abstract public function BuildHead();
+
     abstract public function BuildBody();
+
     abstract public function BuildArmLeft();
+
     abstract public function BuildArmRight();
+
     abstract public function BuildLegLeft();
+
     abstract public function BuildLegRight();
 }
 
@@ -86,7 +91,8 @@ class PersonFatBuilder extends PersonBuilder
 class PersonDirector
 {
     private $personBuilder;
-    function __construct($personBuilder)
+
+    function __construct(PersonBuilder $personBuilder)
     {
         $this->personBuilder = $personBuilder;
     }
@@ -103,11 +109,11 @@ class PersonDirector
 }
 
 
-echo "苗条的:".PHP_EOL;
+echo "苗条的:" . PHP_EOL;
 //建造者模式 将构建与表示分离
 $thinDirector = new PersonDirector(new PersonThinBuilder());
 $thinDirector->CreatePerson();
 
-echo PHP_EOL."胖的:.".PHP_EOL;
+echo PHP_EOL . "胖的:." . PHP_EOL;
 $fatDirector = new PersonDirector(new PersonFatBuilder());
 $fatDirector->CreatePerson();

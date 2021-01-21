@@ -37,6 +37,7 @@ class Facade
         $this->encrypt = new Encrypt();
     }
 
+    // 这里其实违反了 开闭原则
     public function encryContent()
     {
         $str = $this->file->content();
