@@ -38,6 +38,7 @@ abstract class Observer
     abstract function update();
 }
 
+// 被观察的类
 class ConcreteSubject extends Subject
 {
     private $subjectState;
@@ -53,6 +54,7 @@ class ConcreteSubject extends Subject
     }
 }
 
+// 观察者类
 class ConcreteObserver extends Observer
 {
     private $name;
@@ -62,7 +64,7 @@ class ConcreteObserver extends Observer
     public function __construct(ConcreteSubject $subject, $name)
     {
         $this->subject = $subject;
-        $this->name = $name;
+        $this->name    = $name;
     }
 
     // 设置观察行为
@@ -79,6 +81,7 @@ $s->attach(new ConcreteObserver($s, "y"));
 $z = new ConcreteObserver($s, "z");
 $s->attach($z);
 $s->detatch($z);
+
 
 //当这个对象在状态发生变化时，通知所有观察者
 $s->setState('ABC');
