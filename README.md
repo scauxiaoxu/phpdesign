@@ -42,7 +42,7 @@
 14. [代理模式 - Proxy](./代理模式/index1.php)
 15. [策略模式 - Strategy](./策略模式/index1.php)
 16. [模板方法模式 - Template Method](./模板方法/index1.php)
-17. [观察者模式 - Observer](./观察者模式/index10.php)
+17. [观察者模式 - Observer](./观察者模式/index1.php)
 18. [迭代器模式 - Iterator](./迭代器模式/index1.php)
 
 
