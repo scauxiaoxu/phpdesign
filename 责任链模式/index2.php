@@ -14,7 +14,11 @@
 
 declare(strict_types=1);
 
+require_once __DIR__ . '/../vendor/autoload.php';
+
+
 use Psr\Http\Message\RequestInterface;
+
 
 // 处理器抽象类
 abstract class Handler
