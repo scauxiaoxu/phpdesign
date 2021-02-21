@@ -47,10 +47,17 @@
 19. [责任链模式 - Chain of responsibility](./责任链模式/index1.php)
 20. [命令模式- Command](./命令模式/index1.php)
 
+### 补充
+
+- 六大设计模式
+
+- 管道模式(Pipeline)
 
 ### 参考
+
 - https://github.com/domnikl/DesignPatternsPHP
 - https://github.com/baijunyao/design-patterns
 
 ### License
+
 [MIT](https://github.com/scauxiaoxu/phpdesign/blob/main/LICENSE)
